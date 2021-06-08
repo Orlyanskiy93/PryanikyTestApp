@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="5Mg-Ll-pCS" customClass="MainTableViewCell" customModule="PryanikyTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Mg-Ll-pCS" id="PCR-Zp-aOA">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-zd-tla">
+                        <rect key="frame" x="20" y="30" width="374" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-EF-fU3">
+                                <rect key="frame" x="156" y="10" width="62" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uB0-EF-fU3" secondAttribute="bottom" constant="10" id="HbD-4J-nDh"/>
+                            <constraint firstItem="uB0-EF-fU3" firstAttribute="top" secondItem="j7M-zd-tla" secondAttribute="top" constant="10" id="aIG-Dc-GGV"/>
+                            <constraint firstItem="uB0-EF-fU3" firstAttribute="centerX" secondItem="j7M-zd-tla" secondAttribute="centerX" id="hll-Xn-AXP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j7M-zd-tla" firstAttribute="centerY" secondItem="PCR-Zp-aOA" secondAttribute="centerY" id="64r-zt-fyf"/>
+                    <constraint firstItem="j7M-zd-tla" firstAttribute="leading" secondItem="PCR-Zp-aOA" secondAttribute="leading" constant="20" id="6ks-IT-iny"/>
+                    <constraint firstAttribute="trailing" secondItem="j7M-zd-tla" secondAttribute="trailing" constant="20" id="PQt-cb-gah"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="container" destination="j7M-zd-tla" id="jlV-2r-UuR"/>
+                <outlet property="titleLabel" destination="uB0-EF-fU3" id="r3n-yR-SSD"/>
+            </connections>
+            <point key="canvasLocation" x="-349.27536231884062" y="52.901785714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
