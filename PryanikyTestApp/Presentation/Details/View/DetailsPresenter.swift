@@ -9,7 +9,7 @@ import Foundation
 import Kingfisher
 
 class DetailsPresenter: DetailsViewOutput {
-    weak var view: DetailsViewInput!
+    private weak var view: DetailsViewInput!
     
     init(view: DetailsViewInput) {
         self.view = view
